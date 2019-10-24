@@ -28,6 +28,12 @@ namespace nzxtsharp_diagnostic_util
             stopCAM();
             logNzxtSharpInfo(loader);
             HuePlusTest.runAllTests(loader.HuePlus, log);
+            KrakenXTest.runAllTests(loader.KrakenX, log);
+
+            Console.WriteLine("\n\n\nAll tests complete. If anything did not work properly, please create an issue " +
+                "at github.com/akmadian/NZXTSharp. Be sure to include a pastebin (or other) link to the log file (can be found in the logs/ " +
+                "directory in the same directory as this exe.)");
+            Console.WriteLine("Press any key to exit...");
             Console.ReadLine();
         }
 
